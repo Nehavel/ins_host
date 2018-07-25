@@ -1,0 +1,39 @@
+*[parallax] {
+    width: 99vw;
+    height: 80vh;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex-container {
+     
+    display: flex;
+    flex-direction: row;
+    /* padding: 5%; */
+    margin: 20px;
+      }
+#aa
+{
+    width: 99vw;
+    height: 50vh;  
+}
+#first-page {
+    background-image: url('../../assets/boat.jpg');
+    background-attachment: fixed;
+    
+}
+#third-page {
+    background-image: url('../../assets/table.jpg')
+}
+#contact
+{ width: 99vw;
+    height: 50vh;
+    background-color:#9c3;
+}
+#move
+{
+    width: 99vw;
+    height: 50vh;
+    background-color:black;  
+}

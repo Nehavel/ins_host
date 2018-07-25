@@ -1,0 +1,13 @@
+.flex-container {
+     
+    display: flex;
+    flex-direction: row;
+    /* padding: 5%; */
+    margin: 20px;
+    color: aliceblue;
+    align-content: space-between;
+      }
+.center {
+    text-align: justify;
+    width: 30vw;
+}

@@ -1,0 +1,18 @@
+.flex-container {
+     
+    display: flex;
+    flex-direction: column;
+      }
+h3{
+    margin-left: 20px;
+}
+#cc{
+    color: white;
+display: flex;
+justify-content:center;
+align-items: center; 
+
+}
+button{
+    border-radius: 40%;
+}
