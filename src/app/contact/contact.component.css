@@ -17,8 +17,12 @@ display: flex;
 justify-content:center;
 align-items: center; 
 }
-#img
+/* #img
 {
-    height: 50vh;
+    height: 10vh;
     width: 50vw;
+} */
+iframe {
+    height: 303px;
+    width: 600px;
 }

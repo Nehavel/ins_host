@@ -1,27 +1,31 @@
-<img src="../../assets/logo2.png" alt="logo">
-<span (mouseenter)="homeActive=true" 
-(mouseleave)="homeActive=false" 
-[style.color]=" homeActive ? '#4dff4d' : 'black' ">
-<a routerLink="/">Home</a>
-</span>
-<span  (mouseenter)="aboutActive=true"
- (mouseleave)="aboutActive=false" 
- [style.color]=" aboutActive ? '#4dff4d' : 'black' ">
-    About
-</span >
-<button mat-button [matMenuTriggerFor]="menu" (mouseenter)="menuActive=true"
-(mouseleave)="menuActive=false" 
-[style.color]=" menuActive ? '#4dff4d' : 'black' ">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
-  <span (mouseenter)="contactActive=true"
-  (mouseleave)="contactActive=false" 
-  [style.color]=" contactActive ? '#4dff4d' : 'black' ">
-  <a routerLink="/contactform">Contact</a>
-  </span>
-  <div id="right">
-  <i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;
-  <i class="fab fa-twitter-square"></i>
-  </div>
+<div id="maincontainer">
+    <img src="../../assets/logo2.png" alt="logo">
+
+
+    <button mat-button (mouseenter)="amenuActive=true"
+    (mouseleave)="amenuActive=false" 
+    [style.color]=" amenuActive ? '#4dff4d' : 'black' "><a routerLink="/">Home</a></button>
+
+    <button mat-button (mouseenter)="bmenuActive=true"
+    (mouseleave)="bmenuActive=false" 
+    [style.color]=" bmenuActive ? '#4dff4d' : 'black' "><a routerLink="/About">About</a></button>
+
+    <button mat-button [matMenuTriggerFor]="menu" (mouseenter)="menuActive=true"
+    (mouseleave)="menuActive=false" 
+    [style.color]=" menuActive ? '#4dff4d' : 'black' ">Menu</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item><a routerLink="/left">Left</a></button>
+      <button mat-menu-item><a routerLink="/right">Right</a></button>
+      
+    </mat-menu>
+
+    <button mat-button (mouseenter)="menuActive=true"
+    (mouseleave)="menuActive=false" 
+    [style.color]=" menuActive ? '#4dff4d' : 'black' "><a routerLink="/contactform">Contact</a></button>
+
+
+      <div id="right">
+      <i class="fab fa-facebook"></i>&nbsp;&nbsp;&nbsp;
+      <i class="fab fa-twitter-square"></i>
+      </div>
+</div>

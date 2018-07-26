@@ -1,0 +1,61 @@
+<div class="flex-container">
+<div>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>RecentComments</mat-card-title>
+  </mat-card-header>
+    <mat-card-content>
+      <div class="columns">
+        <div *ngFor="let c of RecentComments">
+         <p>
+            <i class="material-icons">timeline</i>
+           {{c.name}}</p> 
+        </div>
+        </div>
+  </mat-card-content>
+</mat-card>
+</div>
+<br>
+<br>
+
+<div>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>RecentPost</mat-card-title>
+    </mat-card-header>
+      <mat-card-content>
+        <div class="columns">
+          <div *ngFor="let c of RecentPost">
+           <p>
+              <i class="material-icons">tab</i>
+             {{c.name}}</p> 
+          </div>
+          </div>
+    </mat-card-content>
+  </mat-card>
+  </div>
+<br>
+<br>
+
+  <div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Archives</mat-card-title>
+      </mat-card-header>
+        <mat-card-content>
+          <div class="columns">
+            <div *ngFor="let c of Archives">
+             <p>
+                <i class="material-icons">view_list</i>
+               {{c.name}}</p> 
+            </div>
+            </div>
+      </mat-card-content>
+    </mat-card>
+    </div>
+
+</div>
+
+
+ 
+  

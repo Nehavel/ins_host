@@ -17,6 +17,11 @@ import { MoveComponent } from './move/move.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './routes';
+import { AboutComponent } from './about/about.component';
+import { VerMovComponent } from './ver-mov/ver-mov.component';
+import {MatCardModule} from '@angular/material/card';
+import { RightComponent } from './right/right.component';
+import { LeftComponent } from './left/left.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +32,12 @@ import { routes } from './routes';
     HelpComponent,
     ContactComponent,
     MoveComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    AboutComponent,
+    VerMovComponent,
+    RightComponent,
+    LeftComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -37,6 +47,7 @@ import { routes } from './routes';
     MatFormFieldModule,
     MatMenuModule,
     MatButtonModule,
+    MatCardModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
